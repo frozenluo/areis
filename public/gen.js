@@ -17,7 +17,7 @@ $(function(){
 //                }else {
 //                	console.log('expected token:' + returnToken + '; instead get:' + userToken);
 //                }
-                $('#keyText').text(data.id);
+                $('#keyText').text(data.id.replace('http://goo.gl/', ''));
             }
         });
     });
