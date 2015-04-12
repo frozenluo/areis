@@ -17,7 +17,7 @@ $(function(){
 //                }else {
 //                	console.log('expected token:' + returnToken + '; instead get:' + userToken);
 //                }
-                $('#keyText').val(data.id);
+                $('#keyText').text(data.id);
             }
         });
     });
