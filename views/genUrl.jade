@@ -3,7 +3,14 @@ html
         title ariesphotography
         script(src="//code.jquery.com/jquery-1.11.2.min.js")
         script(src="gen.js")
+        style
+            include gen.css
     body
-        label please input customer url here
-        input(type='text', id='urlText')
-        button(id='gen') generate
+        div
+            label Please input customer url here:
+            input(type='text', id='urlText')
+            button(id='gen') generate
+        
+        div
+            label customer key:
+            span(id='keyText')

@@ -17,7 +17,10 @@ $(function(){
 //                }else {
 //                	console.log('expected token:' + returnToken + '; instead get:' + userToken);
 //                }
-                alert('use this url:' + data.id);
+                $('#keyText').val(data.id);
+            },
+            error: function() {
+                alert('please try again.');
             }
         });
     });
