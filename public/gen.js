@@ -18,9 +18,6 @@ $(function(){
 //                	console.log('expected token:' + returnToken + '; instead get:' + userToken);
 //                }
                 $('#keyText').val(data.id);
-            },
-            error: function() {
-                alert('please try again.');
             }
         });
     });
