@@ -8,8 +8,12 @@ $(function () {
                 var url = data.longUrl;
                 if (url.indexOf('http://www.ariesphotography.com.au/') === 0) {
                     window.location.href = data.longUrl;
+                } else {
+                    $('#errorHint').show();
                 }
-
+            },
+            error: function (xhr, ajaxOptions, thrownError) {
+                $('#errorHint').show();
             }
         });
     });
